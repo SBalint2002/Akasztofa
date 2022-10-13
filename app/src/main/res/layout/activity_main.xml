@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/buttonbackround"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:text="-"
+                android:id="@+id/minusz"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="30sp"
+                android:layout_marginStart="10sp"
+                android:id="@+id/betu"
+                android:minWidth="30sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/buttonbackround"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:text="+"
+                android:id="@+id/plusz"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tippel"
+            android:textSize="20sp"
+            android:id="@+id/tipp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/akasztofa00"
+            android:id="@+id/kep"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/szoveg"
+        android:textSize="30sp"
+        android:letterSpacing="0.5"/>
+
+
+</RelativeLayout>
